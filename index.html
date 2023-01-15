@@ -6,7 +6,7 @@
         <div class="container">
             <h1>Generate a<br><span style="color:#4ADF86">random password</span></h1>
             <p>Never use an insecure password again</p>
-            <button onclick="generatePassword()">Generate passwords</button>
+            <button onclick="updatePasswords()">Generate passwords</button>
 
             <div class="settings">
                 <label for="length">Password length (5 - 15 characters)</label>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="passwords-container">
-            <div class="password" id="password1">password</div>
-            <div class="password" id="password2">password</div>
+            <div class="password" id="password1" onclick="copyToClipboard(this.id)">password</div>
+            <div class="password" id="password2" onclick="copyToClipboard(this.id)">password</div>
         </div>
 
         <p id="copy">Click to copy to clipboard</p>
